@@ -29,7 +29,6 @@ var colors = [
   vec4(0.0, 0.0, 0.0, 1.0), // black
 ];
 
-// onload 함수를 통해 그림을 그릴 스케치북을 생성한다.
 window.onload = function init() {
   canvas = document.getElementById("gl-canvas");
 
@@ -54,7 +53,6 @@ window.onload = function init() {
       startColor = parseInt(event.target.value);
     };
     if (redraw) {
-      // 스케치북 버퍼를 할당한다.
       gl.bindBuffer(gl.ARRAY_BUFFER, vBuffer);
 
       // 마우스가 움직일 경우 그려지는 사각형의 점의 좌표
